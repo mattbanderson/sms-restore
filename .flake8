@@ -1,0 +1,13 @@
+[flake8]
+exclude =
+    # don't traverse the git directory
+    .git,
+    # no need to check cache directories
+    __pycache__,
+    # skip local data files
+    data
+    migrations
+
+max-line-length = 99
+
+statistics = True
